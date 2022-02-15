@@ -1,0 +1,25 @@
+/* For Colors */
+:root {
+    /* ----- Primary ------ */
+    --headingText: hsl(233, 26%, 24%);
+    --limeGreen: hsl(136, 65%, 51%);
+    --brightCyan: hsl(192, 70%, 51%);
+
+    /* ----- Neutral ------ */
+    --detailText: hsl(233, 8%, 62%);
+    --graybg: hsl(220, 16%, 96%);
+    --herobg: hsl(0, 0%, 98%);
+    --hoverText: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--VeryLightGray);
+}
