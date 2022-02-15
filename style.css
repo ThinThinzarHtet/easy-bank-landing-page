@@ -21,5 +21,61 @@
 body {
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
-    background-color: var(--VeryLightGray);
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    padding: 20px 100px;
+}
+
+/* ---------- Reusable code -----------*/
+.btn {   
+    padding: 15px 30px;
+    background: linear-gradient(to right,var(--limeGreen), var(--brightCyan));
+    border-radius: 35px;
+    transition: all 300ms;
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 70%;
+}
+.btn a {
+    color: var(--hoverText);
+}
+
+/* ---------- Navigation Bar ------------ */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+ul li a {
+    color: var(--detailText);
+    transition: all 300ms;
+}
+
+ul li a:hover {
+    color: var(--headingText);
+    border-bottom: 5px solid;
+    border-image: linear-gradient(
+        to right, var(--limeGreen), var(--brightCyan)
+    );
+    border-image-slice: 1;
+    padding-bottom: 20px;
+}
+
